@@ -1,7 +1,16 @@
-<div id="contenedor-principal">
+<div class="contenedor-slider">
 
-    <!-- Aquí se incluyen los elementos que se irán moviendo-->
+    <ng-image-slider
+        [images]="imageObject"
+        [infinite]="false"
+        [autoSlide]="1"
+        [imageSize]="{width: '25%', height: 200}"
+        slideImage="1">        
+    </ng-image-slider>
+</div>
 
-    
-    
+<div class="contenedor-descarga">
+    <button type="button" class="btn btn-info">
+        Descarga aquí nuestra Declaración de Fe completa
+    </button>
 </div>

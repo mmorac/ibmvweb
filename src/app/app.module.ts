@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgImageSliderModule } from 'ng-image-slider';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
@@ -16,7 +16,8 @@ import { DeclaracionComponent } from './componentes/declaracion/declaracion.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
