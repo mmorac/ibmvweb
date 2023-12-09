@@ -1,13 +1,15 @@
 version: 2.1
 orbs:
-  browser-tools: circleci/browser-tools@1.2.3
+  browser-tools: circleci/browser-tools@1.4.1
 jobs:
   build:
     working_directory: ~/ng-project
     docker:
-      - image: cimg/node:16.13.1-browsers
+      - image: cimg/node:lts-browsers
     steps:
-      - browser-tools/install-chrome
+      - browser-tools/install-chrome:
+            chrome-version: 114.0.5735.90
+            replace-existing: true
       - browser-tools/install-chromedriver
       - run:
           command: |
@@ -18,8 +20,23 @@ jobs:
       - restore_cache:
           key: ng-project-{{ .Branch }}-{{ checksum "package-lock.json" }}
       - run: npm install
+      - run: npm install --save-dev firebase-tools
       - save_cache:
           key: ng-project-{{ .Branch }}-{{ checksum "package-lock.json" }}
           paths:
             - "node_modules"
-      - run: npm run test
+      - run:
+          name: "Run test"
+          command: npm run test
+      - run:
+          name: "Build application for production"
+          command: npm run build
+      - run:
+          name: "Generate Service Account Authentication"
+          command: 'echo "$GOOGLE_APPLICATION_CREDENTIALS_BASE_64" | base64 --decode > $GOOGLE_APPLICATION_CREDENTIALS'
+      - run:
+          name: "Deploy app to Firebase Hosting"
+          command: "./node_modules/.bin/firebase deploy --non-interactive"
+      - run:
+          name: "Remove credentials file"
+          command: "rm $GOOGLE_APPLICATION_CREDENTIALS"
