@@ -1,4 +1,18 @@
+.container-nav{
+    background: rgb(37,185,218);
+    background: linear-gradient(180deg, rgba(37,185,218,1) 0%, rgba(37,185,218,1) 35%, rgba(255,255,255,1) 100%);
+    width: 100%;    
+    text-align: center;
+}
+
+.logo{
+    height: 5rem;
+}
+
+a{
+    color: #eee;
+}
+
 .navmv{
-    background-color: #25B9DA;
     height: 6rem;
 }

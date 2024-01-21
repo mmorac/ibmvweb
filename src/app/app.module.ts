@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { DeclaracionComponent } from './componentes/declaracion/declaracion.component';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
+import { MinisteriosComponent } from './componentes/ministerios/ministerios.component';
+import { AcercaComponent } from './componentes/acerca/acerca.component';
+import { DonaComponent } from './componentes/dona/dona.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     NavbarComponent,
-    DeclaracionComponent
+    DeclaracionComponent,
+    ContactoComponent,
+    MinisteriosComponent,
+    AcercaComponent,
+    DonaComponent
   ],
   imports: [
     BrowserModule,
