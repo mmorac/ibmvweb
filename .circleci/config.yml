@@ -34,7 +34,7 @@ jobs:
           command: 'echo "$GOOGLE_APPLICATION_CREDENTIALS_BASE_64" | base64 --decode > $GOOGLE_APPLICATION_CREDENTIALS'
       - run:
           name: "Deploy app to Firebase Hosting"
-          command: "./node_modules/.bin/firebase deploy --non-interactive"
+          command: "./node_modules/.bin/firebase deploy --token $FIREBASE_TOKEN --non interactive"
       - run:
           name: "Remove credentials file"
           command: "rm $GOOGLE_APPLICATION_CREDENTIALS"
