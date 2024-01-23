@@ -1,0 +1,29 @@
+.encabezado{
+    text-align: center;
+}
+
+.horario{
+    height: 20rem;
+    margin-top: 5rem;
+    width: 20%;
+    margin-left: 10%;
+    text-align: center;
+    display: inline-block;
+}
+
+.dia{
+    display: grid;
+    position: inherit;
+    height: 5rem;
+    vertical-align: middle;
+}
+
+
+.reuniones{
+    display: block;
+    height: 15rem;
+}
+
+.reunion{
+    height: 5rem;
+}

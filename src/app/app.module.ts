@@ -10,6 +10,8 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { MinisteriosComponent } from './componentes/ministerios/ministerios.component';
 import { AcercaComponent } from './componentes/acerca/acerca.component';
 import { DonaComponent } from './componentes/dona/dona.component';
+import { VisitanosComponent } from './componentes/visitanos/visitanos.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,14 +22,18 @@ import { DonaComponent } from './componentes/dona/dona.component';
     ContactoComponent,
     MinisteriosComponent,
     AcercaComponent,
-    DonaComponent
+    DonaComponent,
+    VisitanosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    HttpClientModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,15 @@
+<div class="container principal lato-regular">
+    <div class="encabezado">
+        <h2>Te invitamos a acompañarnos</h2>
+    </div>
+    <div *ngFor="let reunion of info" class="horario">
+        <div class="dia">
+            <h3>{{reunion['dia']}}</h3>
+        </div>
+        <div class="reuniones">
+            <div *ngFor="let r of reunion['reuniones']" class="reunion">
+                <strong>{{r['reunion']}}</strong> - {{r['horario']}}
+            </div>    
+        </div>
+    </div>
+</div>
