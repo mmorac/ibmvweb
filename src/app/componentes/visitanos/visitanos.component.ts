@@ -16,9 +16,8 @@ export class VisitanosComponent {
 
   ngOnInit(){
 
-    this.getJson(this.reuniones).subscribe(t => {
-      this.info = t;
-      console.log(this.info[0]);
+    this.getJson(this.reuniones).subscribe(lista => {
+      this.info = lista;
     });
     
   }
