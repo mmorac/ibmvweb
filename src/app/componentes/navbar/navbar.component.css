@@ -1,3 +1,9 @@
+@media screen and (max-width: 480px){
+    a{
+        background-color: rgba(37,185,218, 0.5) !important;
+    }
+   }
+
 .container-nav{
     background: rgb(37,185,218);
     background: linear-gradient(180deg, rgba(37,185,218,1) 0%, rgba(37,185,218,1) 35%, rgba(255,255,255,1) 100%);
@@ -17,3 +23,28 @@ a{
 .navmv{
     height: 6rem;
 }
+
+.contenedor-logo{
+    float: left;
+    height: 7rem;
+    width: 10%;
+    display: table;
+}
+
+.contenedor-navbar{
+    height: 7rem;
+    width: 50%;
+    margin-left: 15%;
+    display: block;
+}
+
+.contenedor-dona{
+    width: 10%;
+    display: inline-block;
+    border-style: dotted;
+}
+
+.nav-item{
+    width: 8rem;
+}
+
