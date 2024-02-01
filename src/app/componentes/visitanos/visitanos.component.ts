@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './visitanos.component.html',
   styleUrls: ['./visitanos.component.css']
 })
+
 export class VisitanosComponent {
   private reuniones = 'assets/Archivos/reuniones.json';
 

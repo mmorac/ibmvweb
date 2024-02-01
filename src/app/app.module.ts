@@ -12,6 +12,9 @@ import { AcercaComponent } from './componentes/acerca/acerca.component';
 import { DonaComponent } from './componentes/dona/dona.component';
 import { VisitanosComponent } from './componentes/visitanos/visitanos.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { GoogleMapsModule } from '@angular/google-maps'
+
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     NgImageSliderModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleMapsModule
   ],
   providers: [
     HttpClientModule
