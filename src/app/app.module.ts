@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgImageSliderModule } from 'ng-image-slider';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
@@ -12,7 +11,6 @@ import { AcercaComponent } from './componentes/acerca/acerca.component';
 import { DonaComponent } from './componentes/dona/dona.component';
 import { VisitanosComponent } from './componentes/visitanos/visitanos.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { GoogleMapsModule } from '@angular/google-maps'
 
 
 
@@ -31,9 +29,7 @@ import { GoogleMapsModule } from '@angular/google-maps'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgImageSliderModule,
-    HttpClientModule,
-    GoogleMapsModule
+    HttpClientModule
   ],
   providers: [
     HttpClientModule
