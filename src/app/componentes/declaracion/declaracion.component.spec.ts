@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NgImageSliderModule } from 'ng-image-slider';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { DeclaracionComponent } from './declaracion.component';
