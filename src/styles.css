@@ -1,0 +1,8 @@
+@font-face {
+    font-family: LouisGeorgeCafe;
+    src: url('../src/assets/Fuentes/Louis_George_Cafe/LouisGeorgeCafe.ttf');
+}
+
+body{
+    font-family: LouisGeorgeCafe;
+}
