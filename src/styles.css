@@ -3,6 +3,13 @@
     src: url('../src/assets/Fuentes/Louis_George_Cafe/LouisGeorgeCafe.ttf');
 }
 
+@font-face {
+    font-family: LouisGeorgeCafeBold;
+    src: url('../src/assets/Fuentes/Louis_George_Cafe/LouisGeorgeCafeBold.ttf');
+}
+
+
 body{
     font-family: LouisGeorgeCafe;
 }
+
