@@ -1,9 +1,31 @@
 @media screen and (max-width: 480px){
     a{
-        background-color: rgba(37,185,218, 0.5) !important;
+        background-color: rgba(37,185,218, 0.3);
     }
-   }
+    li{
+        background-color: rgba(37,185,218, 0.3);
+    }
+    .dropdown-menu{
+        background-color: rgba(37,185,218, 0.3);
+    }
+}
 
+@media only screen and (max-width: 768px) {
+    .navbar-brand {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .navbar-toggler{
+        position: absolute;
+        left: -15%;
+        top: 0%;
+        transform: translateX(-50%);  
+    }
+
+}
+   
 .container-nav{
     background: rgb(37,185,218);
     background: linear-gradient(180deg, rgba(37,185,218,1) 0%, rgba(37,185,218,1) 35%, rgba(255,255,255,1) 100%);
