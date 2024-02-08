@@ -70,3 +70,6 @@ a{
     width: 8rem;
 }
 
+.dropdown-item{
+    color: rgba(37,185,218,1);    
+}
