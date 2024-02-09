@@ -8,8 +8,26 @@
     src: url('../src/assets/Fuentes/Louis_George_Cafe/LouisGeorgeCafeBold.ttf');
 }
 
+@font-face {
+    font-family: LouisGeorgeCafeItalic;
+    src: url('../src/assets/Fuentes/Louis_George_Cafe/LouisGeorgeCafeItalic.ttf');
+}
+
+@font-face {
+    font-family: LouisGeorgeCafeBoldItalic;
+    src: url('../src/assets/Fuentes/Louis_George_Cafe/LouisGeorgeCafeBoldItalic.ttf');
+}
 
 body{
     font-family: LouisGeorgeCafe;
 }
 
+.pie{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(37,185,218,1) 35%, rgba(37,185,218,1) 100%);
+    color: white;
+    text-align: center;
+}
+
+.versiculo{
+    font-family: LouisGeorgeCafeItalic;
+}
