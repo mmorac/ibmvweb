@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { NgxSpinner, NgxSpinnerService } from 'ngx-spinner';
+import { takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-ensenanzas',
@@ -9,4 +12,6 @@ import { Component } from '@angular/core';
 })
 export class EnsenanzasComponent {
 
+  constructor(){
+  }
 }
