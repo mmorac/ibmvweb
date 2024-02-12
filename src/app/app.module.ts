@@ -11,6 +11,7 @@ import { AcercaComponent } from './componentes/acerca/acerca.component';
 import { DonaComponent } from './componentes/dona/dona.component';
 import { VisitanosComponent } from './componentes/visitanos/visitanos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EnsenanzasComponent } from './componentes/ensenanzas/ensenanzas.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     MinisteriosComponent,
     AcercaComponent,
     DonaComponent,
-    VisitanosComponent
+    VisitanosComponent,
+    EnsenanzasComponent
   ],
   imports: [
     BrowserModule,
