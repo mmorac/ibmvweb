@@ -1,1 +1,13 @@
-<p>ensenanzas works!</p>
+<div class="container contenedor-ensenanzas">
+    <p class="encabezado">
+        Enseñanzas
+    </p>
+    <div *ngFor="let video of ensenanzas" class="ensenanza">
+        <p>
+            {{video.titulo}} <br> {{video.fecha}}
+        </p>        
+        <iframe width="420" height="315"
+        [src]="asegurarURL(video.url)">
+        </iframe>        
+    </div>
+</div>
