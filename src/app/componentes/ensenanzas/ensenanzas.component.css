@@ -1,5 +1,14 @@
+.encabezado{
+    width: 100%;
+    text-align: center;
+    font-family: LouisGeorgeCafeBold;
+    font-size: xx-large;
+}
+
 .contenedor-ensenanzas{
     width: 100%;
+    height: 85rem;
+    background-color: #fcfcfc;
 }
 
 .ensenanza{
