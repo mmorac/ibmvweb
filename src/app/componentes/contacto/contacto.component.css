@@ -1,0 +1,67 @@
+.container-fluid{
+    align-items: center;
+}
+
+.contenedor-tabla{
+    width: 80%;
+    padding-top: 5%;
+    padding-left: 35%;
+    text-align: center;
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.icono-contacto{
+    height: 3rem;
+}
+
+
+.tabla-contacto {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.contactos{
+    text-align: left;
+}
+
+.contacto {
+    width: 10rem;
+    height: 7rem;
+    padding: 10px;
+}
+
+.icono-contacto {
+    max-width: 50px;
+    height: auto;
+}
+
+/* Estilo específico para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    /* Cambiar a diseño de una sola columna */
+    .tabla-contacto {
+        display: block;
+    }
+
+    .contenedor-tabla{
+        width: 100%;
+        padding-left: 20%;
+    }
+
+    /* Ajustar el tamaño de las celdas */
+    .contacto {
+        width: 20rem;
+        display: block;
+        text-align: left;
+    }
+}

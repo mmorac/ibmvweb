@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SlideInterface } from '../../modulos/image-slider/types/slide.interface';
 
 @Component({
   selector: 'app-declaracion',
@@ -10,6 +11,12 @@ import { Component } from '@angular/core';
 export class DeclaracionComponent {
 
   name = 'Angular';
+
+  slides: SlideInterface[] = [
+    {url:'../../../assets/img/declaracion/1-Inspiracion.png', title:'Inspiración Divina de las Escrituras'},
+    {url:'../../../assets/img/declaracion/2-Trinidad.png', title:'Dios Padre, Dios Hijo y Dios Espíritu Santo'}
+  ]; 
+
   imageObject = [{
       image: '../../../assets/img/declaracion/1-Inspiracion.png',
       thumbImage: '../../../assets/img/declaracion/1-Inspiracion_t.png',
