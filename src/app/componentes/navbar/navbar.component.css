@@ -1,36 +1,4 @@
-@media only screen and (max-width: 768px) {
-    .dropdown-menu{
-        background-color: white;
-        width: 100vh;
-        border-style: solid;
-    }
-
-    a{
-        color: rgb(37, 185, 218);
-    }
-
-    .navbar-brand {
-      background-color: transparent;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .navbar-toggler{
-        position: absolute;
-        left: -15%;
-        top: 0%;
-        transform: translateX(-50%);  
-    }
-
-    .navbar-collapse{
-        height: -moz-available;
-        height: -webkit-fill-available;
-        width: fill-available;        
-    }
-
-}
-   
+  
 .container-nav{
     background: linear-gradient(180deg, rgba(37,185,218,1) 0%, rgba(37,185,218,1) 35%, rgba(255,255,255,1) 100%);
     width: 100%;    
@@ -76,4 +44,50 @@ a{
 
 .dropdown-item{
     color: rgba(37,185,218,1);    
+}
+
+@media only screen and (max-width: 768px) {
+    .dropdown-menu{
+        background-color: white;
+        width: 25rem;
+        border-style: solid;
+    }
+
+    a{
+        color: rgb(37, 185, 218);
+        background-color: white;
+    }
+
+    .nav-link{
+        width: 25rem;
+        padding-top: 20%;
+        height: 5rem;
+        align-items: center;
+    }
+    .navbar-brand {
+      background-color: transparent;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .navbar-toggler{
+        position: absolute;
+        left: -15%;
+        top: 0%;
+        transform: translateX(-50%);  
+    }
+
+    .navbar-collapse{
+        background-color: white;
+        position: fixed;
+        width: 25rem;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        overflow-y: auto;        
+    }
+
 }

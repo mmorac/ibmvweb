@@ -1,15 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { NgModule } from '@angular/core';
+import { ImageSliderComponent } from '../../componentes/image-slider/image-slider.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
+  exports: [ImageSliderComponent],
+  declarations: [ImageSliderComponent],
 })
 
-export class ImageSliderModule { 
-
-}
+export class ImageSliderModule {}

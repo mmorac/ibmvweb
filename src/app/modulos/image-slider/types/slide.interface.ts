@@ -1,4 +1,4 @@
-export interface SlideInterface{
-    url:string;
-    title:string;
+export interface SlideInterface {
+    url: string;
+    title: string;
 }

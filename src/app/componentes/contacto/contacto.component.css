@@ -53,6 +53,9 @@ a{
         display: block;
     }
 
+    hr{
+        display: none;
+    }
     .contenedor-tabla{
         width: 100%;
         padding-left: 20%;
