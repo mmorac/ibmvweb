@@ -1,4 +1,5 @@
 .contenedor-inicio{
+    padding-top: 10%;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -6,8 +7,59 @@
 
 .btn-info{
     color: white;
+    vertical-align: middle;
+    height: 4rem;
+    width: 90%;
+}
+
+.contenedor-botones{
+    text-align: center;
+    height: 10rem;
+}
+
+.contenedor-descarga{
+    margin-left: 10%;
+    width: 40%;
+    height: 5rem;
+    text-align: center;
+    float: left;
+    display: flex;
+}
+
+.contenedor-primera-vez{
+    width: 40%;
+    height: 5rem;
+    text-align: center;
+    float: left;
+    display: flex;
 }
 
 .bienvenida{
     font-size: xx-large;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .bienvenida{
+        font-size: xx-large;
+    }
+
+    .contenedor-botones{
+        width: 100%;
+    }
+
+    .contenedor-descarga{
+        width: 80%;
+        display: block;
+    }
+
+    .contenedor-primera-vez{
+        margin-left: 10%;
+        width: 80%;
+        display: block;
+    }
+
+    .btn-info{
+        font-size: small;
+    }
 }
