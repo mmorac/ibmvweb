@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class MinisteriosComponent {
 
+  ministerios = {
+    "hombres": {
+      "descripcion": "Nos reunimos los hombres",
+      "foto": "",
+      "horario": "Una sábado al mes durante la mañana."
+    },
+    "mujeres": {
+      "descripcion": "Nos reunimos los hombres",
+      "foto": "",
+      "horario": "Una sábado al mes durante la mañana."
+    },
+    "ninos": {
+      "descripcion": "Nos reunimos los hombres",
+      "foto": "",
+      "horario": "Una sábado al mes durante la mañana."
+    }
+  }
+
 }
