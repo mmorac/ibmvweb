@@ -5,6 +5,7 @@ import { VisitanosComponent } from './componentes/visitanos/visitanos.component'
 import { EnsenanzasComponent } from './componentes/ensenanzas/ensenanzas.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
+import { MinisteriosComponent } from './componentes/ministerios/ministerios.component';
 
 const routes: Routes = [
   {path:'inicio', component:InicioComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'visitanos', component:VisitanosComponent},
   {path:'ensenanzas', component:EnsenanzasComponent},
   {path:'contacto', component:ContactoComponent},
+  {path:'ministerio/:ministerio', component:MinisteriosComponent},
   {path:'**', component:InicioComponent}
 ];
 

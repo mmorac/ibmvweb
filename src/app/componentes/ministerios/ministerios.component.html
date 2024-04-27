@@ -1,1 +1,11 @@
-<p>ministerios works!</p>
+<div class="container">
+    <table>
+        <tr>
+            <td>{{ministerios[parametro]["descripcion"]}}</td>
+            <td rowspan="2"><img [src]="ministerios[parametro].foto"></td>
+        </tr>
+        <tr>
+            <td>{{ministerios[parametro]["horario"]}}</td>
+        </tr>
+    </table>
+</div>
