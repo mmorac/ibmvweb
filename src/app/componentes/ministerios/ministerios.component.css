@@ -10,3 +10,17 @@ td{
 img{
     height: 20rem;
 }
+
+@media screen and (max-width: 600px) {
+    table{
+        width: 80%;
+        margin-left: 0;
+    }
+    img{
+        height: 10rem;
+    }
+
+    td{
+        width: 20rem;
+    }
+}
