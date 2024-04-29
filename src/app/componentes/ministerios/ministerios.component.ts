@@ -11,14 +11,14 @@ export class MinisteriosComponent {
   parametro:string = "";
   ministerios:{ [key: string]: any }= {
     "hombres": {
-      "descripcion": "Nos reunimos los hombres",
+      "descripcion": "Una reunión para que, como hombres, busquemos juntos parecernos cada día más a nuestro Señor, Jesucristo.",
       "foto": "../../../assets/img/Hombres.jpeg",
-      "horario": "Una sábado al mes durante la mañana."
+      "horario": "Nos reunimos un sábado al mes. Contáctanos para más información."
     },
     "mujeres": {
-      "descripcion": "Nos reunimos las mujeres",
-      "foto": "FOTOMUJERES",
-      "horario": "Una sábado al mes durante la mañana."
+      "descripcion": "Una reunión para que las mujeres de nuestra iglesia puedan compartir alrededor de la Palabra de Dios.",
+      "foto": "../../../assets/img/Mujeres.jpeg",
+      "horario": "Nos reunimos una vez al mes. Para más información, contáctanos."
     },
     "ninos": {
       "descripcion": "Nos reunimos los niños",
@@ -26,9 +26,9 @@ export class MinisteriosComponent {
       "horario": "Una sábado al mes durante la mañana."
     },
     "jovenes": {
-      "descripcion": "Nos reunimos los jóvenes",
-      "foto": "FOTOJÓVENES",
-      "horario": "Una sábado al mes durante la mañana."
+      "descripcion": "Una reunión de, por y para jóvenes. Aprendemos cómo vivir como Jesús en esta sociedad.",
+      "foto": "../../../assets/img/Jovenes.jpeg",
+      "horario": "Todos los viernes a las 19:30."
     }
 
   }

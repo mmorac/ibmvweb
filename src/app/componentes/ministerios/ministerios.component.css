@@ -1,10 +1,21 @@
-table{
-    width: 80%;
-    margin-left: 20%;
-}
-td{
+.info{
+    width: 70%;
     height: 10rem;
-    width: 20rem;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.titulo, .horario{
+    flex: 1;
+    text-align: center;
+}
+
+.foto{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: center;
 }
 
 img{
@@ -12,15 +23,20 @@ img{
 }
 
 @media screen and (max-width: 600px) {
-    table{
-        width: 80%;
-        margin-left: 0;
-    }
-    img{
-        height: 10rem;
+    .info {
+        flex-direction: column; /* Cambia la dirección del flexbox para que los elementos aparezcan uno encima del otro */
+        text-align: center; /* Centra el contenido en dispositivos pequeños */
     }
 
-    td{
-        width: 20rem;
+    .horario {
+        margin-top: 3rem; /* Añade espacio entre el título y el horario */
+    }    
+
+    .foto{
+        margin-top: 5rem;
     }
+    img{
+        height: 15rem;
+    }
+    
 }

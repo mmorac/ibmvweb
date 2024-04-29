@@ -1,11 +1,13 @@
 <div class="container">
-    <table>
-        <tr>
-            <td>{{ministerios[parametro]["descripcion"]}}</td>
-            <td rowspan="2"><img [src]="ministerios[parametro].foto"></td>
-        </tr>
-        <tr>
-            <td>{{ministerios[parametro]["horario"]}}</td>
-            </tr>
-    </table>
+    <div class="info">
+        <div class="titulo">
+            {{ministerios[parametro]["descripcion"]}}
+        </div>
+        <div class="horario">
+            {{ministerios[parametro]["horario"]}}
+        </div>    
+    </div>
+    <div class="foto">
+        <img [src]="ministerios[parametro].foto">
+    </div>
 </div>
