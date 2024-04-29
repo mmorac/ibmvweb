@@ -26,7 +26,7 @@ export class MinisteriosComponent {
       "horario": "Una sábado al mes durante la mañana."
     },
     "jovenes": {
-      "descripcion": "Una reunión de, por y para jóvenes. Aprendemos cómo vivir como Jesús en esta sociedad.",
+      "descripcion": "Una reunión de, por y para jóvenes. Aprendemos cómo vivir como Jesús lo haría en este tiempo.",
       "foto": "../../../assets/img/Jovenes.jpeg",
       "horario": "Todos los viernes a las 19:30."
     }

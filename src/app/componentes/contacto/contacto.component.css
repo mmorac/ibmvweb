@@ -64,6 +64,7 @@ a{
     /* Ajustar el tamaño de las celdas */
     .contacto {
         width: 20rem;
+        height: 6rem;
         display: block;
         text-align: left;
     }
