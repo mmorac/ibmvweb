@@ -14,7 +14,10 @@
 
 .contenedor-botones{
     text-align: center;
+    display: flex;
     height: 10rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenedor-descarga{
@@ -22,7 +25,7 @@
     width: 40%;
     height: 3rem;
     text-align: center;
-    float: left;
+    align-items: center;
     display: flex;
 }
 
@@ -30,8 +33,16 @@
     width: 40%;
     height: 5rem;
     text-align: center;
-    float: left;
+    align-items: center;
+    justify-content: center;
     display: flex;
+}
+
+.contenedor-primera-vez a {
+    display: flex; /* Hace que el enlace sea un elemento flex */
+    align-items: center; /* Alinea verticalmente el enlace */
+    justify-content: center;
+    line-height: 5rem; /* Centra verticalmente el texto dentro del contenedor */
 }
 
 .bienvenida{
@@ -46,19 +57,32 @@
 
     .contenedor-botones{
         width: 100%;
+        justify-content: center;
     }
 
-    .contenedor-descarga{
+    .contenedor-descarga,
+    .contenedor-primera-vez {
         width: 80%;
-        display: block;
+        height: 5rem; /* Ajusta la altura para que ambos contenedores tengan la misma altura */
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
-    .contenedor-primera-vez{
-        margin-left: 10%;
-        width: 80%;
-        display: block;
+    .contenedor-descarga a {
+        display: flex; /* Hace que el enlace sea un elemento flex */
+        align-items: center; /* Alinea verticalmente el enlace */
+        justify-content: center;
     }
 
+    .contenedor-primera-vez a {
+        display: flex; /* Hace que el enlace sea un elemento flex */
+        align-items: center; /* Alinea verticalmente el enlace */
+        justify-content: center;
+        line-height: 1rem; /* Centra verticalmente el texto dentro del contenedor */
+    }
+    
     .btn-info{
         font-size: small;
     }
