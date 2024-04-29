@@ -20,22 +20,20 @@
     align-items: center;
 }
 
-.contenedor-descarga{
-    margin-left: 10%;
-    width: 40%;
-    height: 3rem;
-    text-align: center;
-    align-items: center;
-    display: flex;
-}
-
-.contenedor-primera-vez{
-    width: 40%;
+.contenedor-descarga, .contenedor-primera-vez{
+    width: 30%;
     height: 5rem;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+.contenedor-descarga a {
+    display: flex; /* Hace que el enlace sea un elemento flex */
+    align-items: center; /* Alinea verticalmente el enlace */
+    justify-content: center;
+    line-height: 5rem; /* Centra verticalmente el texto dentro del contenedor */
 }
 
 .contenedor-primera-vez a {
