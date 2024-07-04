@@ -30,17 +30,17 @@
 }
 
 .contenedor-descarga a {
-    display: flex; /* Hace que el enlace sea un elemento flex */
-    align-items: center; /* Alinea verticalmente el enlace */
+    display: flex; 
+    align-items: center; 
     justify-content: center;
-    line-height: 5rem; /* Centra verticalmente el texto dentro del contenedor */
+    line-height: 5rem; 
 }
 
 .contenedor-primera-vez a {
-    display: flex; /* Hace que el enlace sea un elemento flex */
-    align-items: center; /* Alinea verticalmente el enlace */
+    display: flex; 
+    align-items: center; 
     justify-content: center;
-    line-height: 5rem; /* Centra verticalmente el texto dentro del contenedor */
+    line-height: 5rem; 
 }
 
 .bienvenida{
@@ -61,7 +61,7 @@
     .contenedor-descarga,
     .contenedor-primera-vez {
         width: 80%;
-        height: 5rem; /* Ajusta la altura para que ambos contenedores tengan la misma altura */
+        height: 5rem; 
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -69,16 +69,16 @@
     }
 
     .contenedor-descarga a {
-        display: flex; /* Hace que el enlace sea un elemento flex */
-        align-items: center; /* Alinea verticalmente el enlace */
+        display: flex; 
+        align-items: center; 
         justify-content: center;
     }
 
     .contenedor-primera-vez a {
-        display: flex; /* Hace que el enlace sea un elemento flex */
-        align-items: center; /* Alinea verticalmente el enlace */
+        display: flex; 
+        align-items: center; 
         justify-content: center;
-        line-height: 1rem; /* Centra verticalmente el texto dentro del contenedor */
+        line-height: 1rem; 
     }
     
     .btn-info{
