@@ -21,9 +21,9 @@ export class MinisteriosComponent {
       "horario": "Nos reunimos una vez al mes. Para más información, contáctanos."
     },
     "ninos": {
-      "descripcion": "Nos reunimos los niños",
-      "foto": "FOTONIÑOS",
-      "horario": "Una sábado al mes durante la mañana."
+      "descripcion": "Invertimos en la siguiente generación que llevará el Evangelio al mundo.",
+      "foto": "../../../assets/img/ninos.jpg",
+      "horario": "Domingos en la mañana durante nuestra reunión dominical."
     },
     "jovenes": {
       "descripcion": "Una reunión de, por y para jóvenes. Aprendemos cómo vivir como Jesús lo haría en este tiempo.",
