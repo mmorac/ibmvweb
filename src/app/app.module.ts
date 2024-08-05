@@ -12,11 +12,11 @@ import { DonaComponent } from './componentes/dona/dona.component';
 import { VisitanosComponent } from './componentes/visitanos/visitanos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EnsenanzasComponent } from './componentes/ensenanzas/ensenanzas.component';
+import { PopupComponent } from './componentes/popup/popup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InicioComponent,
     NavbarComponent,
     DeclaracionComponent,
     ContactoComponent,
@@ -29,8 +29,9 @@ import { EnsenanzasComponent } from './componentes/ensenanzas/ensenanzas.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    PopupComponent
+],
   providers: [
     HttpClientModule
   ],
