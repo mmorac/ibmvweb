@@ -30,6 +30,9 @@ jobs:
           name: "Build application for production"
           command: npm run build
       - run:
+          name: "Show credentials file location"
+          command: 'echo "Credentials file path: $GOOGLE_APPLICATION_CREDENTIALS"; ls -l $GOOGLE_APPLICATION_CREDENTIALS'
+      - run:
           name: "Generate Service Account Authentication"
           command: 'echo "$GOOGLE_APPLICATION_CREDENTIALS_BASE_64" | base64 --decode > $GOOGLE_APPLICATION_CREDENTIALS'
       - run:
