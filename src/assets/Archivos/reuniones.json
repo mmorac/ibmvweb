@@ -3,12 +3,16 @@
       "dia": "Domingo",
       "reuniones": [
         {
-          "reunion": "Escuela dominical",
-          "horario": "11:00 a. m."
+          "reunion": "Primer culto",
+          "horario": "10:00 a. m."
         },
         {
-          "reunion": "Culto",
-          "horario": "12:00 p. m."
+          "reunion": "Escuela dominical",
+          "horario": "11:15 a. m."
+        },
+        {
+          "reunion": "Segundo culto",
+          "horario": "12:30 p. m."
         }
       ]
     },
@@ -22,11 +26,11 @@
       ]
     },
     {
-      "dia": "Viernes",
+      "dia": "Sábado",
       "reuniones": [
         {
           "reunion": "Reunión de jóvenes",
-          "horario": "7:30 p. m."
+          "horario": "12:00 p. m."
         }
       ]
     }
