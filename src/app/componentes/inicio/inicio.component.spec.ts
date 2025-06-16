@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { InicioComponent } from './inicio.component';
 import { CommonModule } from '@angular/common';
 import { PopupComponent } from '../popup/popup.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('InicioComponent', () => {
   let component: InicioComponent;
@@ -14,15 +15,16 @@ describe('InicioComponent', () => {
       imports: [
         CommonModule,
         InicioComponent,
-        PopupComponent
+        PopupComponent,
+        RouterTestingModule
       ]
     })
     .compileComponents(); 
   });
 
   it('should create', () => {
-    fixture = TestBed.createComponent(InicioComponent);
-    component = fixture.componentInstance;
+    const fixture = TestBed.createComponent(InicioComponent);
+    const component = fixture.componentInstance;
     expect(component).toBeTruthy();
   });
 });

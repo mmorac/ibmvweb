@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PopupComponent } from '../popup/popup.component';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -8,7 +7,7 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css'],
-  imports: [CommonModule, PopupComponent, RouterModule]
+  imports: [CommonModule, RouterModule]
 })
 export class InicioComponent {
 
