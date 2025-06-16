@@ -12,7 +12,7 @@ export class PopupComponent implements OnInit {
 
   showPopup: boolean = true;
 
-  ruta_imagen = "../../../assets/img/vbs.jpeg";
+  ruta_imagen = "../../../assets/img/ebv2025.jpg";
   constructor() { 
   }
 
