@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PopupComponent } from '../popup/popup.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css'],
-  imports: [CommonModule, PopupComponent]
+  imports: [CommonModule, PopupComponent, RouterModule]
 })
 export class InicioComponent {
 
