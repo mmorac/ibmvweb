@@ -5,7 +5,7 @@ jobs:
   build:
     working_directory: ~/ng-project
     docker:
-      - image: cimg/node:lts-browsers
+      - image: cimg/node:20.11.1-browsers
     steps:
       - browser-tools/install-chrome
       - browser-tools/install-chromedriver
