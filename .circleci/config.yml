@@ -1,46 +1,32 @@
 version: 2.1
-orbs:
-  browser-tools: circleci/browser-tools@1.4.8
+
 jobs:
-  build:
-    working_directory: ~/ng-project
+  deploy:
     docker:
-      - image: cimg/node:20.11.1-browsers
+      - image: cimg/node:lts-browsers
     steps:
-      - browser-tools/install-chrome
-      - browser-tools/install-chromedriver
-      - run:
-          command: |
-            google-chrome --version
-            chromedriver --version
-          name: Check install
       - checkout
-      - restore_cache:
-          key: ng-project-{{ .Branch }}-{{ checksum "package-lock.json" }}
-      - run: npm install --legacy-peer-deps
-      - run: npm install --save-dev firebase-tools --legacy-peer-deps
-      - save_cache:
-          key: ng-project-{{ .Branch }}-{{ checksum "package-lock.json" }}
-          paths:
-            - "node_modules"
       - run:
-          name: "Run test"
-          command: npm run test
+          name: Install Firebase CLI
+          command: npm install firebase-tools --save-dev
       - run:
-          name: "Build application for production"
-          command: npm run build
+          name: Install Dependencies
+          command: npm ci
       - run:
-          name: "Show credentials file location"
-          command: 'echo "Credentials file path: $GOOGLE_APPLICATION_CREDENTIALS"; ls -l $GOOGLE_APPLICATION_CREDENTIALS'
+          name: Build the Project
+          command: |
+            export CI=false
+            npm run build
       - run:
-          name: "Generate Service Account Authentication"
-          command: 'echo "$GOOGLE_APPLICATION_CREDENTIALS_BASE_64" | base64 --decode > $GOOGLE_APPLICATION_CREDENTIALS'
-      - run:
-          name: "Deploy app to Firebase Hosting"
-          command: "./node_modules/.bin/firebase deploy --non-interactive"
-      - run:
-          name: "Remove credentials file"
-          command: "rm $GOOGLE_APPLICATION_CREDENTIALS"
+          name: Deploy to Firebase
+          command: ./node_modules/.bin/firebase deploy --token $FIREBASE_AUTH_TOKEN
 
-
-
+workflows:
+  version: 2
+  deploy-on-push:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master  # Adjust to your deployment branch
