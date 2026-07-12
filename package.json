@@ -1,42 +1,44 @@
 {
-  "name": "ibmvweb",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test --no-watch --no-progress --browsers=ChromeHeadless"
-  },
+  "name": "ibmvwebdev",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@angular/animations": "^17.1.2",
-    "@angular/common": "^17.1.2",
-    "@angular/compiler": "^17.1.2",
-    "@angular/core": "^17.1.2",
-    "@angular/forms": "^17.1.2",
-    "@angular/platform-browser": "^17.1.2",
-    "@angular/platform-browser-dynamic": "^17.1.2",
-    "@angular/router": "^17.1.2",
-    "@types/googlemaps": "^3.43.3",
-    "npm": "^10.4.0",
-    "rxjs": "~7.8.0",
-    "swiper": "^11.0.5",
-    "tslib": "^2.3.0",
-    "zone.js": "^0.14.3"
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.126",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.4",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^17.1.2",
-    "@angular/cli": "~17.1.2",
-    "@angular/compiler-cli": "^17.1.2",
-    "@types/jasmine": "~4.3.0",
-    "firebase-tools": "^13.0.1",
-    "jasmine-core": "~4.5.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "^5.3.3"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

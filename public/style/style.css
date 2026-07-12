@@ -1,0 +1,706 @@
+@font-face {
+    font-family: 'Bambino';
+    src: url('/font/Bambino.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bambino Bold';
+    src: url('/font/Bambino Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #1e3a8a;
+    --accent-color: #3b82f6;
+    --light-bg: #f8fafc;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --border-color: #e2e8f0;
+}
+
+body {
+    background-image: url("/img/ibmv_fondo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--text-dark);
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    padding: 2rem 1rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    color: #f1f5f9;
+    display: flex;
+}
+
+.titulo-video-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.titulo h1,
+.titulo h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Bambino', 'Inter', sans-serif;
+}
+
+/* Video Background Support */
+video.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.descripcion {
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    color: #e2e8f0;
+    display: flex;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.accesosRapidos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.botonInicio {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    padding: 0.75rem 2rem;
+    min-width: 200px;
+    height: auto;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 6px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(30, 58, 138, 0.2);
+}
+
+.botonInicio:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.4);
+    background: linear-gradient(135deg, #1a2e6a, #2563eb);
+    color: white;
+}
+
+/* ELEMENTOS DEL NAVBAR */
+
+.navbar {
+    position: relative;
+    z-index: 6;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 1.25rem !important;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 1.25rem;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.nav-link:hover::after {
+    width: calc(100% - 2.5rem);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.navbar-collapse li {
+    transition: all 0.3s ease;
+}
+
+/* ELEMENTOS DE INICIO */
+
+.descripcion{
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    color: rgb(200, 200, 200);
+    display: flex;    
+}
+
+.descripcion p {
+    color: #e2e8f0;
+    margin: 1rem 0;
+}
+
+/* ELEMENTOS DE LA PÁGINA VISÍTANOS */
+
+.direcciones {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.direcciones p {
+    line-height: 1.6;
+    margin: 0.75rem 0;
+    font-size: 1rem;
+}
+
+.subtituloVisita {
+    height: auto;
+    padding: 2rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtituloVisita h3 {
+    font-size: 1.8rem;
+    color: #f1f5f9;
+    font-weight: 700;
+    margin: 0;
+}
+
+.vertical-align {
+    margin: 0;
+}
+
+.contenedorimagenvisita {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.como_llegar {
+    display: inline-flex;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ELEMENTOS DE LA PÁGINA MINISTERIOS*/
+
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    z-index: 2;
+    position: relative;
+}
+
+.ministerio_ninos, .ministerio_jovenes, .ministerio_hombres, .ministerio_mujeres, .ministerio_misiones {
+    position: relative;
+    color: #f1f5f9;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* NIÑOS */
+
+.ministerio_ninos {
+    background-image: url("/img/clase_infantil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ministerio_ninos::before,
+.ministerio_jovenes::before,
+.ministerio_hombres::before,
+.ministerio_mujeres::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.ministerio_ninos:hover::before,
+.ministerio_jovenes:hover::before,
+.ministerio_hombres:hover::before,
+.ministerio_mujeres:hover::before {
+    background-color: rgba(59, 130, 246, 0.7);
+}
+
+.ministerio_ninos p,
+.ministerio_jovenes p,
+.ministerio_hombres p,
+.ministerio_mujeres p {
+    position: relative;
+    z-index: 3;
+    color: #f1f5f9;
+    margin: 0;
+}
+
+.ministerio_ninos:hover,
+.ministerio_jovenes:hover,
+.ministerio_hombres:hover,
+.ministerio_mujeres:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+}
+
+/* JÓVENES */
+
+.ministerio_jovenes {
+    background-image: url("/img/jovenes.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* HOMBRES */
+
+.ministerio_hombres {
+    background-image: url("/img/hombres.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* MUJERES */
+
+.ministerio_mujeres {
+    background-image: url("/img/mujeres.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* MISIONES */
+
+.ministerio_misiones {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+
+/* ELEMENTOS DE LA PÁGINA MEDIA */
+
+
+/* ELEMENTOS DE LA PÁGINA DE CONTACTO */
+
+.contacto_container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.social_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    min-height: 180px;
+    gap: 0.75rem;
+}
+
+.social_container:hover {
+    background: rgba(59, 130, 246, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social_container a {
+    text-decoration: none;
+    color: #e2e8f0;
+    position: relative;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.social_container:hover a {
+    color: #3b82f6;
+}
+
+.social_container a span {
+    word-wrap: break-word;
+    word-break: break-word;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    max-width: 100%;
+}
+
+.social {
+    height: 3rem;
+    width: 3rem;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.social_container:hover .social {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE IFRAME */
+iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+/* VISITA COMPONENT STYLES */
+
+.visita-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.visita-section {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.visita-section:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-icon {
+    font-size: 2rem;
+}
+
+.section-header h2 {
+    color: #3b82f6;
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Bambino', 'Inter', sans-serif;
+}
+
+.horario-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.horario-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgba(15, 23, 42, 0.88);
+    border: 1px solid rgba(96, 165, 250, 0.55);
+    border-left: 4px solid #60a5fa;
+    border-radius: 8px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+    transition: all 0.3s ease;
+}
+
+.horario-item:hover {
+    background: rgba(30, 41, 59, 0.95);
+    border-color: rgba(96, 165, 250, 0.85);
+    transform: translateX(4px);
+}
+
+.horario-dia {
+    font-weight: 700;
+    color: #f8fafc;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.horario-hora {
+    color: #93c5fd;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.horario-descripcion {
+    color: #e2e8f0;
+    font-size: 0.9rem;
+}
+
+.ubicacion-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.direccion-principal {
+    color: #f1f5f9;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background: rgba(59, 130, 246, 0.15);
+    border-radius: 8px;
+    margin: 0;
+}
+
+.transporte-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.transporte-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.transporte-item:hover {
+    background: rgba(59, 130, 246, 0.2);
+    transform: translateX(4px);
+}
+
+.transporte-icon {
+    font-size: 1.5rem;
+    min-width: 1.5rem;
+}
+
+.transporte-item p {
+    color: #e2e8f0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* VERSIÓN MÓVIL */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        position: relative;
+        z-index: 6;
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 0.5rem;
+        z-index: 6;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.98);
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 0 0 8px 8px;
+    }
+
+    .navbar-collapse li {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .nav-link {
+        padding: 0.75rem 1rem !important;
+    }
+
+    .titulo {
+        padding-top: 3rem;
+        position: relative;
+        z-index: 2;
+        justify-content: center;
+        color: #f1f5f9;
+        display: flex;
+    }
+
+    .titulo h1,
+    .titulo h2 {
+        font-size: 1.8rem;
+        font-family: 'Bambino', 'Inter', sans-serif;
+    }
+
+    .botonInicio {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        width: 100%;
+        max-width: 250px;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .accesosRapidos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ministerio_ninos, .ministerio_jovenes, .ministerio_hombres, .ministerio_mujeres, .ministerio_misiones {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .contenido {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .visita-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .visita-section {
+        padding: 1.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+        font-family: 'Bambino', 'Inter', sans-serif;
+    }
+
+    .contacto_container {
+        width: 95%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .social_container {
+        padding: 1rem;
+    }
+
+    .social {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .direcciones {
+        padding: 1rem;
+    }
+}
