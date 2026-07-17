@@ -52,7 +52,7 @@ const Visita: React.FC = () => {
                             </div>
                             <div className="transporte-item">
                                 <span className="transporte-icon">🚌</span>
-                                <p>Autobús interurbano 513 desde Príncipe Pío (parada Avenida de Lisboa - Centro de Salud)</p>
+                                <p>Autobús interurbano 513 desde Cuatro Vientos (parada Avenida de Lisboa - Centro de Salud)</p>
                             </div>
                             <div className="transporte-item">
                                 <span className="transporte-icon">🚇</span>
