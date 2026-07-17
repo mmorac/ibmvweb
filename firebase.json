@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "ibmvwebdev",
+    "site": "ibmvweb",
     "public": "build",
     "ignore": [
       "firebase.json",
